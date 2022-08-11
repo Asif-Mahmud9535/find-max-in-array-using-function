@@ -1,0 +1,31 @@
+#include<stdio.h>
+int i,n,ar[],p;
+
+int func(int ar[],int n)
+{
+    int max = ar[0];
+    for(i=0;i<n;i++)
+    {
+        if(ar[i]>max)
+        {
+           max = ar[i];
+        }
+    }
+    return max;
+}
+
+main()
+{
+    printf("Array Size = ");
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&ar[i]);
+    }
+
+    p = func(ar, n);
+
+    printf("%d",p);
+
+}
